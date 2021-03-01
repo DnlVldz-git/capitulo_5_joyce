@@ -19,7 +19,7 @@ public class EventDemo {
         Event[] eventos = new Event[3];
         
         for (int i = 0; i < 3; i++) {
-            System.out.print("Nombre del evento " + (i + 1) + ": ");
+            System.out.print("N."+(i+1)+" Nombre del evento: ");
             String name = leer.nextLine();
             
             System.out.print("Numero de invitados: ");
