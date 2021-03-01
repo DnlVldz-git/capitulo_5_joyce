@@ -25,15 +25,15 @@ public class Event {
     public Event(String evento, Integer num_inv) {
         this.evento = evento;
         this.num_inv = num_inv;
-        setTam_evento();
+        setTamEvento();
         this.costo_por_persona = this.costo / this.num_inv;
     }
 
-    public Boolean getTam_evento() {
+    public Boolean getTamEvento() {
         return tam_evento;
     }
 
-    private void setTam_evento() {
+    private void setTamEvento() {
         if(num_inv >= TIPO_EVENTO){
             this.costo = num_inv * BAJO_PRECIO_INV;
             this.tam_evento = true;
@@ -49,14 +49,14 @@ public class Event {
 
     public void setNum_inv(Integer num_inv) {
         this.num_inv = num_inv;
-        setTam_evento();
+        setTamEvento();
     }
 
     public String getEvento() {
         return evento;
     }
 
-    public Integer getNum_inv() {
+    public Integer getNumInv() {
         return num_inv;
     }
 
@@ -89,11 +89,11 @@ public class Event {
     }
     
     public static Event largerEvent(Event a1, Event a2){
-        if(a1.getNum_inv() > a2.getNum_inv()){
+        if(a1.getNumInv() > a2.getNumInv()){
             System.out.println("\nEvento 1 mas grande.");
             return a1;
         }
-        else if(a2.getNum_inv() > a1.getNum_inv()){
+        else if(a2.getNumInv() > a1.getNumInv()){
             System.out.println("\nEvento 2 mas grande.");
             return a2;
         }
