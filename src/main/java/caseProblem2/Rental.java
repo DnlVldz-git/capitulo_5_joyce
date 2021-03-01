@@ -60,7 +60,7 @@ public class Rental {
         return horas;
     }
 
-    public Integer getMin_extras() {
+    public Integer getMinExtras() {
         return min_extras;
     }
 
